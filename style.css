@@ -1,0 +1,102 @@
+
+@font-face {
+    font-family: Manrope-bold;
+    src: url(/fonts/Manrope-Bold.ttf);
+}
+@font-face {
+    font-family: Manrope;
+    src: url(/fonts/Manrope-Medium.ttf);
+}
+body{
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 1.5rem; 
+    min-height: 100vh;
+}
+.furniture{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    max-width: 375px;
+    font-family: Manrope;
+    border-radius: 0.5rem;
+    font-size: 13px;
+}
+.content{
+    padding: 0.5rem 2rem;
+    box-sizing: border-box;
+    font-family: Manrope;
+    background-color: white;
+}
+p{
+    color: hsl(212, 23%, 69%);
+}
+.footer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5rem;
+}
+h1{
+    font-family: Manrope-bold;
+}
+.author{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 13px;
+}
+.image{
+    max-width: 375px;
+    border-radius: 0.5rem 0.5rem 0 0 ;
+}
+.author-image{
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+.name{
+    margin-bottom: 0.2rem;
+    font-family: Manrope-bold;
+}
+.date-published{
+    margin-top: 0;
+}
+.icon{
+    background-color: hsl(210, 46%, 95%);
+}
+#share-icon{
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    padding: 0.5rem;
+    border-style: none;
+}
+.furniture-active{
+    background-color: linear-gradient(to bottom, white 90%, hsl(217, 19%, 35%) 10% );
+    
+}
+.footer{
+    -o-object-fit: cover;
+    object-fit: contain;
+    background-color: black;
+}
+@media (min-width:1024px) {
+    .furniture{
+        flex-direction: row;
+        
+    }
+    .image{
+        border-radius: 0.5rem 0 0 0.5rem ;
+        height: 100%;
+    }
+    .content{
+        min-width: 375px;
+        height: 100%;
+    }
+}
